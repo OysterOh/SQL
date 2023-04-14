@@ -1,4 +1,4 @@
--- 형 변환함수 TO_CHAR, TO_NUMBER, TO_DATE
+-- 형(形) 변환함수 TO_CHAR, TO_NUMBER, TO_DATE 
 
 -- 날짜를 문자로 TO_CHAR(값, 형식)
 SELECT
@@ -57,7 +57,7 @@ FROM
     dual; --자동 형 변환(문자->숫자)
 
 SELECT
-    TO_NUMBER('2000') + 2000
+    TO_NUMBER('2000') + 2000  -- 이 방식을 권장
 FROM
     dual; -- 명시적 형 변환
 
@@ -162,7 +162,7 @@ first_name, job_id, salary,
         WHEN 'AD_VP' THEN salary*1.3
         WHEN 'FI_ACCOUNT' THEN salary*1.4
     ELSE salary
-    END) AS result
+    END) AS result  -- END 필수
 FROM employees; 
 
 --문제 1.
