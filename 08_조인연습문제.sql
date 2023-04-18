@@ -57,7 +57,7 @@ ON j.job_id = job_history.job_id;
 --문제 5.
 ----Steven King의 부서명을 출력하세요.
 SELECT e.first_name ||' '|| e.last_name AS name, d.department_id, d.department_name
-FROM employees e
+FROM employees e    
 JOIN departments d
 ON e.department_id = d.department_id
 WHERE e.first_name = 'Steven'
@@ -73,7 +73,7 @@ SELECT * FROM employees, departments;
 
 --문제 7.
 ----EMPLOYEES 테이블과 DEPARTMENTS 테이블의 부서번호를 조인하고 SA_MAN 사원만의 사원번호, 이름, 
---급여, 부서명, 근무지를 출력하세요. (Alias를 사용)
+--급여, 부서명, 근무지를 출력하세요. (Alias를 사용)  
 SELECT e.salary, e.first_name, e.employee_id, d.location_id, loc.city
 FROM employees e
 JOIN departments d ON e.department_id = d.department_id
