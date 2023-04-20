@@ -10,7 +10,8 @@
 */
 
 CREATE TABLE dept2(
-    dept_no NUMBER(2), dept_name VARCHAR2(14),
+    dept_no NUMBER(2), 
+    dept_name VARCHAR2(14),
     loca VARCHAR2(15),
     dept_date DATE,
     dept_bonus NUMBER(10)
