@@ -7,7 +7,7 @@ SELECT
     employee_id, first_name
 FROM employees
 WHERE hire_date LIKE '04%'
-UNION
+UNION ALL
 SELECT
     employee_id, first_name
 FROM employees
