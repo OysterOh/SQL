@@ -56,17 +56,18 @@ BEGIN
     FROM employees
     WHERE department_id = v_department_id
     AND ROWNUM = 1;   -- 첫째 값만 구해서 변수에 저장하기 위해
-    
-    dbms_output.put_line(v_salary);
-    CASE
-    WHEN v_salary <= 5000 THEN 
+ dbms_output.put_line(v_salary);
+
+CASE
+    WHEN v_salary <= 5000 THEN
         dbms_output.put_line('낮음');
     WHEN v_salary <= 9000 THEN
         dbms_output.put_line('중간');
     ELSE
         dbms_output.put_line('높음');
-    END CASE;
-END;
+END CASE;
+
+end;
 
 
 
