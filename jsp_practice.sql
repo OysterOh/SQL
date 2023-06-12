@@ -15,3 +15,5 @@ VALUES
 COMMIT;
 
 SELECT * FROM my_user;
+
+
